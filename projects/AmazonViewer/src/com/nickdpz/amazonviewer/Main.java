@@ -74,7 +74,7 @@ public class Main {
 
 				default:
 					System.out.println();
-					System.out.println(".... Selecciona una opción valida ....");
+					System.out.println("....Selecciona una opción valida ....");
 					System.out.println();
 					exit = 1;
 					break;

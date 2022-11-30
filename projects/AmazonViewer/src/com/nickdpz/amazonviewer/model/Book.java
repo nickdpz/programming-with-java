@@ -3,7 +3,7 @@ package com.nickdpz.amazonviewer.model;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Book extends Publication implements IVisualizable {
+public class Book extends Publication implements IDisplayable {
 	private int id;
 	private String isbn;
 	private boolean readed;
