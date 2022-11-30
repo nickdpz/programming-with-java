@@ -14,6 +14,12 @@ import com.nickdpz.util.AmazonUtil;
 
 public class Main {
 
+	static ArrayList<Book> books = Book.makeBookList();
+
+	static ArrayList<Movie> movies = Movie.makeMoviesList();
+
+	static ArrayList<Serie> series = Serie.makeSeriesList();
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -68,7 +74,7 @@ public class Main {
 
 				default:
 					System.out.println();
-					System.out.println("....¡¡Selecciona una opción!!....");
+					System.out.println(".... Selecciona una opción valida ....");
 					System.out.println();
 					exit = 1;
 					break;
@@ -76,8 +82,6 @@ public class Main {
 
 		} while (exit != 0);
 	}
-
-	static ArrayList<Movie> movies = Movie.makeMoviesList();
 
 	public static void showMovies() {
 		int exit = 1;
@@ -121,8 +125,6 @@ public class Main {
 		} while (exit != 0);
 
 	}
-
-	static ArrayList<Serie> series = Serie.makeSeriesList();
 
 	public static void showSeries() {
 		int exit = 1;
@@ -194,8 +196,6 @@ public class Main {
 			}
 		} while (exit != 0);
 	}
-
-	static ArrayList<Book> books = Book.makeBookList();
 
 	public static void showBooks() {
 		int exit = 1;
