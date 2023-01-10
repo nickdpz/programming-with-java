@@ -9,7 +9,7 @@ public class Magazine extends Publication {
 
 	public Magazine(String title, Date edititionDate, String editorial) {
 		super(title, edititionDate, editorial);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public int getId() {
@@ -18,7 +18,7 @@ public class Magazine extends Publication {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
+		
 		String detailMagazine = "\n :: MAGAZINE ::" +
 				"\n Title: " + getTitle() +
 				"\n Editorial: " + getEditorial() +

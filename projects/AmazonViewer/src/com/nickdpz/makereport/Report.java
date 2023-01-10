@@ -13,30 +13,57 @@ public class Report {
 	private String content;
 	private String extension;
 
+	
+	/** 
+	 * @return String
+	 */
 	public String getNameFile() {
 		return nameFile;
 	}
 
+	
+	/** 
+	 * @param nameFile
+	 */
 	public void setNameFile(String nameFile) {
 		this.nameFile = nameFile;
 	}
 
+	
+	/** 
+	 * @return String
+	 */
 	public String getTitle() {
 		return title;
 	}
 
+	
+	/** 
+	 * @param title
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
+	
+	/** 
+	 * @return String
+	 */
 	public String getContent() {
 		return content;
 	}
 
+	
+	/** 
+	 * @param content
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
 
+	/**
+	 * It creates a file with the name, title and content.
+	 */
 	public void makeReport() {
 		if ((getNameFile() != null) && (getTitle() != null) && (getContent() != null)) {
 			// Crear el archivo
@@ -59,10 +86,18 @@ public class Report {
 		}
 	}
 
+	
+	/** 
+	 * @return String
+	 */
 	public String getExtension() {
 		return extension;
 	}
 
+	
+	/** 
+	 * @param extension
+	 */
 	public void setExtension(String extension) {
 		this.extension = extension;
 	}
